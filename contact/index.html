@@ -7,8 +7,8 @@
   
   <meta name="generator" content="Hugo 0.56.3" />
   
-  <link rel="stylesheet" href="/sass/main.min.351078c8981c190317126a9a66ad1554764f6209926989db58fcbb890b6522b6.css" media="screen"
-    integrity="sha256-NRB4yJgcGQMXEmqaZq0VVHZPYgmSaYnbWPy7iQtlIrY=" />
+  <link rel="stylesheet" href="/sass/main.min.eee75498cf8345bce45cc41dcdde77f050ef33bb0cd2f4b2eaed3986eaa9e273.css" media="screen"
+    integrity="sha256-7udUmM&#43;DRbzkXMQdzd538FDvM7sM0vSy6u05huqp4nM=" />
 </head>
   <body>
     <header>
@@ -62,7 +62,7 @@
           </li>
           
           <li>
-            <a href="/assosciation/">Verein</a>
+            <a href="/association/">Verein</a>
           </li>
           
           <li>
@@ -93,34 +93,42 @@
 <h2 id="schreib-uns-was-nettes">Schreib uns was nettes</h2>
 
 <div class="c-form">
-  <form action="https://api.gildedernacht.ch/form/01dbedd3cb60e8969e26028d97a5c53dde17e5e4910019e29285ccb632b6b967" method="POST">
+  <form action="https://api.gildedernacht.ch/form/02522b6176808d38d02d70bd158b212e6772e3f542ab7ab19523cb5ab235d21a"
+    method="POST">
     <div>
       
 
 <p class="c-form--item c-form-field--text">
-	<label for="name">Name</label>
+	<label for="private-name">Name</label>
 	
-		<input name="name" id="name" type="text" placeholder="Name" ZgotmplZ>
-	
-</p>
-
-
-<p class="c-form--item c-form-field--text">
-	<label for="email">E-Mail</label>
-	
-		<input name="email" id="email" type="email" placeholder="E-Mail" ZgotmplZ>
+		<input name="private-name" id="private-name" type="text" placeholder="Name" required>
 	
 </p>
 
 
 <p class="c-form--item c-form-field--text">
-	<label for="message">Nachricht</label>
+	<label for="private-email">E-Mail</label>
 	
-		<textarea name="message" id="message" placeholder="Nachricht" ZgotmplZ></textarea>
+		<input name="private-email" id="private-email" type="email" placeholder="E-Mail" required>
 	
 </p>
 
 
+<p class="c-form--item c-form-field--text">
+	<label for="private-message">Nachricht</label>
+	
+		<textarea name="private-message" id="private-message" placeholder="Nachricht" required></textarea>
+	
+</p>
+
+
+
+
+      <p class="c-form--item c-form-field--text c-form--captcha">
+        <label for="private-captcha">Leer lassen</label>
+        <input name="private-captcha" type="email" />
+      </p>
+      <script>document.querySelector('.c-form--captcha').style.display = 'none';</script>
 
       <input class="c-btn" type="submit" value="Absenden">
       <input type="hidden" name="redirect" value="https://gildedernacht.ch/contact/">
@@ -157,14 +165,29 @@
     <footer>
   <div class="o-outer-container">
     <div class="p-footer">
-      Footertext TODO
+      Luzerner Spielverein
     </div>
     <div class="p-social">
 
       
-
+      
+      <a href="http://chat.gildedernacht.ch/">
+        <img src="/images/Discord-Logo&#43;Wordmark-White.svg" alt="Discord">
+      </a>
       
 
+      
+      
+      <a href="https://www.meetup.com/de-DE/Spieltreffen-Luzern">
+        <img src="/images/meetup-logo-script-white.svg" alt="Meetup">
+      </a>
+      
+
+      
+      
+      <a href="https://www.facebook.com/GildederNacht/">
+        <img src="/images/f_logo_RGB-White_1024.svg" alt="Facebook">
+      </a>
       
 
     </div>

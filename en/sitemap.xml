@@ -3,22 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gildedernacht.ch/en/demo/</loc>
-    <lastmod>2019-05-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gildedernacht.ch/en/assosciation/</loc>
+    <loc>https://gildedernacht.ch/en/association/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://gildedernacht.ch/assosciation/"
+                href="https://gildedernacht.ch/association/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://gildedernacht.ch/en/assosciation/"
+                href="https://gildedernacht.ch/en/association/"
                 />
   </url>
   
@@ -64,6 +59,21 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://gildedernacht.ch/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://gildedernacht.ch/en/newsletter/</loc>
+    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://gildedernacht.ch/newsletter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://gildedernacht.ch/en/newsletter/"
                 />
   </url>
   
