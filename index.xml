@@ -5,6 +5,9 @@ Bisher keine Nachrichten
 Nachricht erfassen
 Wähle dein Anzeigenamen *
 Deine Nachricht *
+const language = 'de';
+const authorInput = document.getElementById("hermes-author");
+const messageInput = document.getElementById("hermes-send");
 const messageHistory = [];
 function randomFromTo(fromInclusive, toInclusive) {
 return (
