@@ -89,6 +89,19 @@ Diese Seite wird erst nach dem Freitag, 24. Dezember 2021 veröffentlicht.
 <li><a href=#begriffe>Begriffe</a></li>
 <li><a href=#videos>Videos</a></li>
 <li><a href=#plugins>Plugins</a></li>
+<li><a href=#beispiele>Beispiele</a>
+<ul>
+<li><a href=#airplane>Airplane</a></li>
+<li><a href=#rope>Rope</a></li>
+<li><a href=#cloth>Cloth</a></li>
+<li><a href=#terrain>Terrain</a></li>
+<li><a href=#comic>Comic</a></li>
+<li><a href=#robot>Robot</a></li>
+<li><a href=#water>Water</a></li>
+<li><a href=#body>Body</a></li>
+<li><a href=#vfx>VFX</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -117,7 +130,7 @@ Diese Seite wird erst nach dem Freitag, 24. Dezember 2021 veröffentlicht.
 </ul>
 <h3 id=schwierigkeitsgrade>Schwierigkeitsgrade</h3>
 <p>Objekte die nahezu nur aus Ecken und Kanten bestehen, oder solche die gleichmässig abgerundet sind, sind tendenziell einfacher zu modellieren. Je mehr Details ein Objekt hat desto aufwändiger wird das modellieren.</p>
-<p>Theoretisch wären Menschen nicht so schwer zu modellieren. Uns fallen aber kleinste Unregelmässigkeiten in Proportionen negativ auf (siehe auch <a href=https://de.wikipedia.org/wiki/Uncanny_Valley>Uncanny Valley</a>). Zusätzlich Schwierigkeit sind Haare als auch das texturieren des Gesichtes.</p>
+<p>Obwohl Menschen verhältnismässig gleichmässig wären, fallen oft kleinste Unregelmässigkeiten in Proportionen negativ auf (siehe auch <a href=https://de.wikipedia.org/wiki/Uncanny_Valley>Uncanny Valley</a>). Eine zusätzliche Schwierigkeit sind die Haare als auch das texturieren des Gesichtes.</p>
 <ul>
 <li>Einfach: Gebäude, Möbel, Geschirr, Werkzeuge</li>
 <li>Mittel: Bäume, Kleider, Fahrzeuge</li>
@@ -131,7 +144,7 @@ Diese Seite wird erst nach dem Freitag, 24. Dezember 2021 veröffentlicht.
 <ul>
 <li>Die Software &ldquo;Blender&rdquo;. Herunterladen und installieren: <a href=https://www.blender.org/download/>https://www.blender.org/download/</a></li>
 <li>Ein Computer/Laptop mit 3D Unterstützung (am besten Blender starten, wenn nach ein paar Sekunden der Bildschirm wie unten aussieht, stehen die Sterne schon mal günstig)</li>
-<li>Idealerweise eine Maus mit 3 Tasten und Scroll-Rad (geht auch ohne)</li>
+<li>Eine Maus, idealerweise eine mit 3 Tasten und Scroll-Rad (geht auch ohne)</li>
 <li>Idealerweise eine Tastur mit einem Ziffernblock (geht auch ohne)</li>
 </ul>
 <p><img src=../blender-2.82-first-screen.png alt="Blender 2.82 First Screen"></p>
@@ -217,17 +230,18 @@ Diese Seite wird erst nach dem Freitag, 24. Dezember 2021 veröffentlicht.
 <li>Texturing</li>
 <li>Shading</li>
 <li>Animation</li>
-<li>Rigging/Skinning</li>
+<li>Rigging</li>
 <li>Simulation</li>
 <li>Rendering</li>
 <li>Game Engine</li>
 <li>Scripting</li>
 <li>Video Editing</li>
+<li>VFX</li>
 <li>Audio</li>
 </ul>
 <h3 id=begriffe>Begriffe</h3>
-<p>Allgemein: Vertex, Edge, Face, Normal, UV, Mesh, FK=Forward Kinematic, IK=Inverse Kinematic, Shader</p>
-<p>Blender: Eevee, Cycles, &mldr;</p>
+<p>Allgemein: Vertex, Edge, Face, Normal, UV, Mesh, FK=Forward Kinematic, IK=Inverse Kinematic, Shader, Bones, Rigging, Skinning, BSDF=Bidirectional Scattering Distribution Function, SSS=Subsurface Scattering, SSAO=Screen Space Ambient Occlusion</p>
+<p>Blender: Eevee, Cycles</p>
 <h3 id=videos>Videos</h3>
 <ul>
 <li>
@@ -247,6 +261,43 @@ Diese Seite wird erst nach dem Freitag, 24. Dezember 2021 veröffentlicht.
 <ul>
 <li><a href="https://www.youtube.com/watch?v=n9nWAuKat60">https://www.youtube.com/watch?v=n9nWAuKat60</a></li>
 </ul>
+<h3 id=beispiele>Beispiele</h3>
+<h4 id=airplane>Airplane</h4>
+<p>Mirror Modifier & Subdivision Modifier
+<img src=../airplane.jpg alt=Airplane>
+<a href=../airplane.blend>Airplane</a></p>
+<h4 id=rope>Rope</h4>
+<p>Array Modifier & Screw Modifier & Curve Modifier
+<img src=../rope.jpg alt=Rope>
+<a href=../rope.blend>Rope</a></p>
+<h4 id=cloth>Cloth</h4>
+<p>Cloth Simulation & Collision Simulation & Vertex Group
+<img src=../cloth.jpg alt=Cloth>
+<a href=../cloth.blend>Cloth</a></p>
+<h4 id=terrain>Terrain</h4>
+<p>Displace Modifier & ColorRamp Material
+<img src=../terrain.jpg alt=Terrain>
+<a href=../terrain.blend>Terrain</a> & <a href=../wikipedia-heightmap.png>Terrain Heightmap</a></p>
+<h4 id=comic>Comic</h4>
+<p>Z-Fighting & Smooth/Flat Shading & ColorRamp Material
+<img src=../comic.jpg alt=Comic>
+<a href=../comic.blend>Comic</a></p>
+<h4 id=robot>Robot</h4>
+<p>Texture & Parenting & Animation
+<img src=../robot.jpg alt=Book>
+<a href=../robot.blend>Book</a> & <a href=../robot.png>Robot Texture</a></p>
+<h4 id=water>Water</h4>
+<p>Fluid Simulation & Glass Material
+<img src=../water.jpg alt=Water>
+<a href=../water.blend>Water</a></p>
+<h4 id=body>Body</h4>
+<p>Bones & Skin Modifier
+<img src=../body.jpg alt=Body>
+<a href=../body.blend>Body</a></p>
+<h4 id=vfx>VFX</h4>
+<p>Tracker & Solve Camera Motion
+<img src=../vfx.jpg alt=VFX>
+<a href=../vfx.blend>VFX</a></p>
 </main>
 <footer>
 <section class=p-contact>
