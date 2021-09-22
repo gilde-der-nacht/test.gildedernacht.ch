@@ -1,0 +1,97 @@
+<!doctype html><html lang=de>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Gilde der Nacht | Rollenspiel Einordnung</title>
+<meta name=generator content="Hugo 0.88.1">
+<link rel=stylesheet href=/sass/main.394f4d57bc85e02d9273cd7a566322daa79ede19ed7c478997807553fa29005c.css media=screen integrity="sha256-OU9NV7yF4C2Sc816VmMi2qee3hntfEeJl4B1U/opAFw=">
+</head>
+<body>
+<header>
+<div id=p-meta-nav>
+<div class=o-outer-container>
+<div id=p-site-switcher class=brand-icon>
+<a href=/>
+<object type=image/svg+xml data=/images/branding/logo.svg height=40>
+Gilde der Nacht
+</object>
+</a>
+</div>
+<div id=p-language>
+<ul>
+<li>
+Deutsch
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id=p-page-nav>
+<div class=o-outer-container>
+<div id=p-site-brand>
+<a href=/>
+<object type=image/svg+xml data=/images/branding/wordmark.svg height=40>
+Gilde der Nacht
+</object>
+</a>
+</div>
+<input type=checkbox id=p-site-nav-toggle>
+<nav id=p-site-nav>
+<ul>
+<li>
+<a href=/>Startseite</a>
+</li>
+<li>
+<a href=/events/>Anlässe</a>
+</li>
+<li>
+<a href=/verein/>Verein</a>
+</li>
+<li>
+<a href=/kontakt/>Kontakt</a>
+</li>
+</ul>
+</nav>
+<label for=p-site-nav-toggle id=p-site-nav-toggle-label>
+<span></span>
+</label>
+</div>
+</div>
+</header>
+<div class="c-jumbotron o-outer-container">
+<h1>Rollenspiel Einordnung</h1>
+</div>
+<main class=o-inner-container>
+<section class="c-message c-message--spam visible" data-type=spam>
+Diese Seite ist ein Entwurf und wird nicht auf der Live-Seite angezeigt.
+</section>
+<h1>Spider</h1>
+<textarea id=definition style=width:500px;height:200px>
+Kategorie 1: 0
+Kategorie 2: 1
+Kategorie 3: 2
+Kategorie 4: 3
+Kategorie 5: 2
+Kategorie 6: 1
+Kategorie 7: 1
+Kategorie 8: 1
+</textarea>
+<canvas id=spider width=800 height=500>
+</canvas>
+<script>function drawSpider(s,f){const c=f.length,d=document.getElementById(s),r=window.getComputedStyle(d),a=d.getContext('2d'),o=d.width,n=d.height,l=o/2,j=n/2;console.log(r.fontFamily),a.font='15pt Lato';const k=a.measureText(f[0][0]),q=k.actualBoundingBoxAscent+k.actualBoundingBoxDescent,m=20,b=Math.min(l,j)-(m+q),h=5,e=2*Math.PI/c;a.clearRect(0,0,o,n),a.lineWidth=2,a.strokeStyle='#333',a.save(),a.translate(l,j);const g=Math.PI/2,p=3*g,i=.2;for(let h=0;h<c;h+=1){const d=h*e,j=b+m,k=Math.cos(d)*j,l=Math.sin(d)*j;Math.abs(d-p)<i?(a.textAlign='center',a.textBaseline='middle'):Math.abs(d-g)<i?(a.textAlign='center',a.textBaseline='middle'):d>g&&d<p?(a.textAlign='right',a.textBaseline='middle'):(a.textAlign='left',a.textBaseline='middle'),a.fillText(f[h][0],k,l)}for(let d=0;d<h;d+=1){const f=(d+1)/h*b;a.beginPath();for(let b=0;b<c;b+=1){const d=b*e,g=Math.cos(d)*f,h=Math.sin(d)*f;a.lineTo(g,h)}a.closePath(),a.stroke()}a.beginPath();for(let d=0;d<c;d+=1){const f=d*e,g=Math.cos(f)*b,h=Math.sin(f)*b;a.moveTo(0,0),a.lineTo(g,h)}a.stroke(),a.strokeStyle='#66f',a.fillStyle='#66f3',a.beginPath();for(let d=0;d<c;d+=1){const g=d*e,j=f[d][1],i=(j+1)/h*b,k=Math.cos(g)*i,l=Math.sin(g)*i;a.lineTo(k,l)}a.closePath(),a.fill(),a.stroke(),a.restore()}function run(){function a(){const b=document.getElementById('definition').value,a=[];b.split('\n').forEach(b=>{if(b.includes(':')){const c=b.split(':',2),d=c[0].trim(),e=parseInt(c[1]),f=typeof d=='string'?d:'?',g=Number.isInteger(e)?e:0;a.push([f,g])}}),drawSpiderOnCanvas('spider',a)}document.getElementById('definition').addEventListener('input',a),a()}run()</script>
+</main>
+<footer>
+<section class=p-contact>
+<div class=o-outer-container>
+<div class=p-social>
+<div class=p-social-logo>
+<a href=https://discord.gg/G7mkTTB>
+<img src=/images/Discord-Logo+Wordmark-White.svg alt=Discord>
+</a>
+</div>
+</div>
+</div>
+</section>
+</footer>
+</body>
+</html>
