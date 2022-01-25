@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>3D Modellierung | Gilde der Nacht</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://kit.fontawesome.com">
+    <script src="https://kit.fontawesome.com/ed5a2d737b.js" crossorigin="anonymous" defer></script>
+    <script src="/scripts/script.js" type="module" defer></script>
+    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
+    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+<meta name="msapplication-square70x70logo" content="/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="/widetile.png" />
+<meta name="msapplication-square310x310logo" content="/largetile.png" />
+
+</head>
+
+<body class=gdn>
+        <header class="header">
+    <input type="checkbox" id="mobile-navigation" class="hidden" />
+<label for="mobile-navigation" class="toggle-mobile-navigation" data-toggle-mobile-navigation>
+    <svg aria-hidden="true" focusable="false" data-icon="bars-staggered" class="fa-bars-staggered open-menu-container"
+        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <g>
+            <path style="opacity: 0.4;" fill="currentColor"
+                d="M64 256C64 238.3 78.33 224 96 224H480C497.7 224 512 238.3 512 256C512 273.7 497.7 288 480 288H96C78.33 288 64 273.7 64 256z">
+            </path>
+            <path fill="currentColor"
+                d="M416 128H32C14.33 128 0 113.7 0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z">
+            </path>
+        </g>
+    </svg>
+    <svg aria-hidden="true" focusable="false" class="fa-xmark close-menu-container" role="img"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path fill="currentColor"
+            d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z">
+        </path>
+    </svg>
+</label>
+<aside class="mobile-menu-container">
+    <nav class="main-navigation">
+    <ul><li><a href="/">Startseite</a></li>
+<li><a href="/kontakt/">Kontakt</a></li></ul>
+</nav>
+
+    <footer class="mobile-footer">
+    <button class="button hidden" data-toggle-theme>
+    <i class="fa-duotone fa-sun-bright hidden" data-toggle-theme-to-light></i>
+    <i class="fa-duotone fa-moon-stars" data-toggle-theme-to-dark></i>
+</button>
+
+</footer>
+
+</aside>
+
+
+    <div class="site-name">
+        <a href="/">
+            <h1>Gilde der Nacht</h1>
+            
+                <h2>Luzerner Spielverein</h2>
+            
+        </a>
+    </div>
+    <div class="site-logo">
+    <a href="/">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" height="75"
+    width="75" class="gdn-logo">
+    <defs>
+        <style>
+            .gdn-gradient-1 {
+                fill: url("#gdn-gradient-1");
+            }
+
+            .gdn-gradient-2 {
+                fill: url("#gdn-gradient-2");
+            }
+
+            .gdn-gradient-3 {
+                fill: url("#gdn-gradient-3");
+            }
+
+            .gdn-gradient-4 {
+                fill: url("#gdn-gradient-4");
+            }
+
+            .gdn-gradient-5 {
+                fill: url("#gdn-gradient-5");
+            }
+
+            .gdn-gradient-6 {
+                fill: url("#gdn-gradient-6");
+            }
+        </style>
+        <linearGradient id="gdn-gradient-1" x1="392.09" y1="221.37" x2="566.4" y2="221.37"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="var(--clr-light)" />
+            <stop offset="1" stop-color="var(--clr-base)" />
+        </linearGradient>
+        <linearGradient id="gdn-gradient-2" x1="433.6" y1="778.63" x2="607.91" y2="778.63"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="var(--clr-base)" />
+            <stop offset="1" stop-color="var(--clr-light)" />
+        </linearGradient>
+        <linearGradient id="gdn-gradient-3" x1="105" y1="385" x2="398.96" y2="385" xlink:href="#gdn-gradient-1" />
+        <linearGradient id="gdn-gradient-4" x1="601.04" y1="615" x2="895" y2="615" xlink:href="#gdn-gradient-2" />
+        <linearGradient id="gdn-gradient-5" x1="192.9" y1="653.63" x2="355.66" y2="653.63"
+            xlink:href="#gdn-gradient-1" />
+        <linearGradient id="gdn-gradient-6" x1="644.34" y1="346.37" x2="807.1" y2="346.37"
+            xlink:href="#gdn-gradient-2" />
+    </defs>
+    <g>
+        <path class="gdn-fill-1" d="M566.4,425,653,575h45.35q-4.12-8.58-8.94-16.93L612.58,425Z" />
+        <path class="gdn-fill-1"
+            d="M681,655c10.94,81.86-27.26,166.15-103.1,209.94l20,34.64A250.55,250.55,0,0,0,721.45,655Z" />
+        <path class="gdn-fill-1"
+            d="M319,345c-10.94-81.86,27.26-166.15,103.1-209.94l-20-34.64A250.55,250.55,0,0,0,278.55,345Z" />
+        <path class="gdn-fill-1" d="M433.6,575,347,425H301.65q4.13,8.58,8.94,16.93L387.42,575Z" />
+        <path class="gdn-fill-1" d="M468.25,405h173.2l22.68-39.28Q654.64,365,645,365H491.34Z" />
+        <path class="gdn-fill-1"
+            d="M821.78,438.22A249.89,249.89,0,0,0,745,385.72l-20.22,35C801.1,452.2,855,527.42,855,615h40A248.36,248.36,0,0,0,821.78,438.22Z" />
+        <path class="gdn-fill-1" d="M531.75,595H358.55l-22.68,39.28q9.5.71,19.13.72H508.66Z" />
+        <path class="gdn-fill-1"
+            d="M275.26,579.26C198.9,547.8,145,472.58,145,385H105A250.53,250.53,0,0,0,255,614.28Z" />
+        <path class="gdn-fill-1" d="M465.78,290.72q-5.37,7.88-10.19,16.21L378.76,440l23.09,40,86.6-150Z" />
+        <path class="gdn-fill-1"
+            d="M607.39,190.45a249.69,249.69,0,0,0-83.88,40.27l20.22,35c65.43-50.4,157.52-59.47,233.36-15.68l20-34.64A248.31,248.31,0,0,0,607.39,190.45Z" />
+        <path class="gdn-fill-1" d="M598.15,520l-86.6,150,22.67,39.28q5.37-7.87,10.19-16.21L621.24,560Z" />
+        <path class="gdn-fill-1"
+            d="M456.27,734.26c-65.43,50.4-157.52,59.47-233.36,15.68l-20,34.64a250.58,250.58,0,0,0,273.58-15.3Z" />
+        <path class="gdn-gradient-1" d="M566.4,345l-137-237.26a20,20,0,0,0-34.64,20L520.21,345Z" />
+        <path class="gdn-gradient-2" d="M605.23,872.26,479.79,655H433.6l137,237.26a20,20,0,1,0,34.64-20Z" />
+        <path class="gdn-gradient-3" d="M399,365H125a20,20,0,0,0,0,40H375.87Z" />
+        <path class="gdn-gradient-4" d="M875,595H624.13L601,635H875a20,20,0,0,0,0-40Z" />
+        <path class="gdn-gradient-5" d="M332.57,520l-137,237.26a20,20,0,0,0,34.64,20L355.66,560Z" />
+        <path class="gdn-gradient-6"
+            d="M797.09,215.42a20,20,0,0,0-27.32,7.32L644.34,440l23.09,40,137-237.26A20,20,0,0,0,797.09,215.42Z" />
+    </g>
+</svg>
+
+        
+    </a>
+</div>
+
+</header>
+
+        <main class="main-content content">
+
+
+
+            <h1 id="3d-modellierung" tabindex="-1"><a class="header-anchor" href="#3d-modellierung">3D Modellierung</a></h1>
+<nav class="table-of-contents"><ol><li><a href="#grundlagen">Grundlagen</a><ol><li><a href="#software-f%C3%BCr-k%C3%BCnstler%3Ainnen">Software für Künstler:innen</a></li><li><a href="#software-ingenieur%3Ainnen">Software Ingenieur:innen</a></li><li><a href="#schwierigkeitsgrade">Schwierigkeitsgrade</a></li></ol></li><li><a href="#blender">Blender</a><ol><li><a href="#vorbereitung">Vorbereitung</a></li><li><a href="#shortcuts">Shortcuts</a></li><li><a href="#funktionen">Funktionen</a></li><li><a href="#begriffe">Begriffe</a></li><li><a href="#problemstellen">Problemstellen</a></li><li><a href="#videos">Videos</a></li><li><a href="#beispiele">Beispiele</a><ol><li><a href="#airplane">Airplane</a></li><li><a href="#rope">Rope</a></li><li><a href="#cloth">Cloth</a></li><li><a href="#terrain">Terrain</a></li><li><a href="#comic">Comic</a></li><li><a href="#robot">Robot</a></li><li><a href="#water">Water</a></li><li><a href="#body">Body</a></li><li><a href="#cloud">Cloud</a></li><li><a href="#vfx">VFX</a></li></ol></li></ol></li></ol></nav><h2 id="grundlagen" tabindex="-1"><a class="header-anchor" href="#grundlagen">Grundlagen</a></h2>
+<p>Hinweis: Dieses Dokument ist die Grundlage für ein Workshop. Viele Begriffe werden hier bewusst nicht erklärt, sondern sind lediglich eine Diskussionsgrundlage und lassen sich einfacher zeigen als erklären.</p>
+<h3 id="software-fuer-kuenstlerinnen" tabindex="-1"><a class="header-anchor" href="#software-fuer-kuenstlerinnen">Software für Künstler:innen</a></h3>
+<p>Der Fokus liegt darauf mit einer grossen Anzahl an verschiedenen Werkzeugen möglichst effizient unterschiedlichste Modelle erstellen zu können. Die Ästhetik steht im Vordergrund.</p>
+<ul>
+<li><a href="https://www.blender.org/">Blender</a>: Modellierung, Animationen, Texturen, Simulation, Visualisierung, VFX, … <em><strong>OpenSource</strong></em></li>
+<li><a href="https://www.sketchup.com/products/sketchup-for-web">SketchUp</a>: Modellierung für Anfänger</li>
+</ul>
+<h3 id="software-ingenieurinnen" tabindex="-1"><a class="header-anchor" href="#software-ingenieurinnen">Software Ingenieur:innen</a></h3>
+<p>Der Fokus ist oft dass man das Resultat irgendwie produziert (Fräsen, 3D Drucken, …). In der Produktion sind unter anderem Reproduzierbarkeit, Massangaben und Toleranzen wichtig.</p>
+<ul>
+<li><a href="https://www.blockscad3d.com/">BlocksCAD</a>: Grafische Oberfläche für OpenSCAD</li>
+<li><a href="https://www.freecadweb.org/">FreeCAD</a>: CAD Programm <em><strong>OpenSource</strong></em></li>
+<li><a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a>: Professionelles CAD Programm (zwingende Anmeldung)</li>
+<li><a href="https://www.leocad.org/">LeoCAD</a>: Modelle mit Klemm-Bausteinen aufbauen <em><strong>OpenSource</strong></em></li>
+<li><a href="https://openjscad.com/">OpenJSCAD</a>: Online Variante von OpenSCAD <em><strong>OpenSource</strong></em></li>
+<li><a href="https://openscad.org/">OpenSCAD</a>: Modelle mit Text aufbauen <em><strong>OpenSource</strong></em></li>
+<li><a href="https://www.tinkercad.com/">TinkerCAD</a>: Eingeschränktes aber einfaches CAD Programm</li>
+</ul>
+<h3 id="schwierigkeitsgrade" tabindex="-1"><a class="header-anchor" href="#schwierigkeitsgrade">Schwierigkeitsgrade</a></h3>
+<p>Objekte die nahezu nur aus Ecken und Kanten bestehen, oder solche die gleichmässig abgerundet sind, sind tendenziell einfacher zu modellieren. Je mehr Details ein Objekt hat desto aufwändiger wird das modellieren.</p>
+<p>Obwohl Menschen verhältnismässig gleichmässig wären, fallen uns oft kleine Unregelmässigkeiten in Proportionen auf (siehe auch <a href="https://de.wikipedia.org/wiki/Uncanny_Valley">Uncanny Valley</a>). Eine zusätzliche Schwierigkeit sind Kleider, die Haare und das texturieren des Gesichtes.</p>
+<ul>
+<li>Einfach: Gebäude, Möbel, Geschirr, Werkzeuge</li>
+<li>Mittel: Bäume, Kleider, Fahrzeuge</li>
+<li>Schwer: Tiere, Menschen</li>
+</ul>
+<h2 id="blender" tabindex="-1"><a class="header-anchor" href="#blender">Blender</a></h2>
+<p><a href="https://www.blender.org/">https://www.blender.org/</a></p>
+<p>Blender ist in den letzten Jahren zu einer der bekannteren Modellierungs-Software geworden. Blender wird seid 20 Jahren aktiv entwickelt, ständig erweitert und oft auch vereinfacht. Inzwischen gibt es auch viele kostenlose Plugins.</p>
+<h3 id="vorbereitung" tabindex="-1"><a class="header-anchor" href="#vorbereitung">Vorbereitung</a></h3>
+<p>Was benötigt man</p>
+<ul>
+<li>Die Software «Blender». Herunterladen und installieren: <a href="https://www.blender.org/download/">https://www.blender.org/download/</a></li>
+<li>Ein Laptop mit 3D Unterstützung (am besten Blender starten, wenn nach ein paar Sekunden der Bildschirm wie unten aussieht, stehen die Sterne schon mal günstig)</li>
+<li>Eine Maus, idealerweise eine mit Scroll-Rad und einer mittleren Maustaste, was oftmals das Scroll-Rad, das man auch drücken kann, selber ist (erleichtert die Bedienung, geht aber auch ohne)</li>
+<li>Idealerweise eine Tastatur mit einem Ziffernblock (erleichtert ebenfalls die Bedienung, geht aber auch ohne)</li>
+</ul>
+<p><img src="blender-2.82-first-screen.png" alt="Blender 2.82 First Screen"></p>
+<h3 id="shortcuts" tabindex="-1"><a class="header-anchor" href="#shortcuts">Shortcuts</a></h3>
+<div class="table-container"><table><thead><tr><th>Taste</th><th>Aktion</th></tr></thead><tbody><tr><td>Numpad 3</td><td>View From X / Right</td></tr><tr><td>Numpad 1</td><td>View From Y / Front</td></tr><tr><td>Numpad 7</td><td>View From Z / Top</td></tr><tr><td>Mittlere Maustaste</td><td>View Rotate</td></tr><tr><td>Shift + Mittlere Maustaste</td><td>View Move</td></tr><tr><td>Numpad .</td><td>View Focus</td></tr><tr><td>Tab</td><td>Object/Edit Mode</td></tr><tr><td>G</td><td>Move</td></tr><tr><td>S</td><td>Scale</td></tr><tr><td>R</td><td>Rotate</td></tr><tr><td>E</td><td>Extrude</td></tr><tr><td>1</td><td>Vertex Select Mode</td></tr><tr><td>2</td><td>Edge Select Mode</td></tr><tr><td>3</td><td>Face Select Mode</td></tr><tr><td>Alt + Z</td><td>X-Ray Mode</td></tr><tr><td>F3</td><td>Search</td></tr></tbody></table></div>
+<h3 id="funktionen" tabindex="-1"><a class="header-anchor" href="#funktionen">Funktionen</a></h3>
+<ul>
+<li>Modeling</li>
+<li>Sculpting</li>
+<li>Texturing</li>
+<li>Shading</li>
+<li>Animation</li>
+<li>Rigging</li>
+<li>Simulation</li>
+<li>Rendering</li>
+<li>Game Engine</li>
+<li>Scripting</li>
+<li>Video Editing</li>
+<li>VFX</li>
+<li>Audio</li>
+</ul>
+<h3 id="begriffe" tabindex="-1"><a class="header-anchor" href="#begriffe">Begriffe</a></h3>
+<p>Allgemein: Vertex, Edge, Face, Normal, UV, Mesh, Rigid Body, Soft Body, Z-Buffer, Forward Kinematic (FK), Inverse Kinematic (IK), Shader, Bones, Rigging, Skinning, Shadow Mapping, Bidirectional Scattering Distribution Function (BSDF), Subsurface Scattering (SSS), Screen Space Ambient Occlusion (SSAO)</p>
+<p>Blender: Eevee, Cycles</p>
+<h3 id="problemstellen" tabindex="-1"><a class="header-anchor" href="#problemstellen">Problemstellen</a></h3>
+<ul>
+<li>Object Scaling = 1.0</li>
+<li>Lock Object Modes</li>
+<li>Speicherort Texturen</li>
+<li>Grouping/Collections</li>
+</ul>
+<h3 id="videos" tabindex="-1"><a class="header-anchor" href="#videos">Videos</a></h3>
+<ul>
+<li>Doughnut Tutorial: <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U">https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U</a></li>
+<li>Blender 2.8 Fundamentals: <a href="https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6">https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6</a></li>
+</ul>
+<h3 id="beispiele" tabindex="-1"><a class="header-anchor" href="#beispiele">Beispiele</a></h3>
+<h4 id="airplane" tabindex="-1"><a class="header-anchor" href="#airplane">Airplane</a></h4>
+<p>Mirror Modifier &amp; Subdivision Modifier
+<img src="airplane.jpg" alt="Airplane">
+<a href="airplane.blend">Airplane</a></p>
+<h4 id="rope" tabindex="-1"><a class="header-anchor" href="#rope">Rope</a></h4>
+<p>Array Modifier &amp; Screw Modifier &amp; Curve Modifier
+<img src="rope.jpg" alt="Rope">
+<a href="rope.blend">Rope</a></p>
+<h4 id="cloth" tabindex="-1"><a class="header-anchor" href="#cloth">Cloth</a></h4>
+<p>Cloth Simulation &amp; Collision Simulation &amp; Vertex Group
+<img src="cloth.jpg" alt="Cloth">
+<a href="cloth.blend">Cloth</a></p>
+<h4 id="terrain" tabindex="-1"><a class="header-anchor" href="#terrain">Terrain</a></h4>
+<p>Displace Modifier &amp; ColorRamp Material
+<img src="terrain.jpg" alt="Terrain">
+<a href="terrain.blend">Terrain</a> &amp; <a href="wikipedia-heightmap.png">Terrain Heightmap</a></p>
+<h4 id="comic" tabindex="-1"><a class="header-anchor" href="#comic">Comic</a></h4>
+<p>Z-Fighting &amp; Smooth/Flat Shading &amp; ColorRamp Material
+<img src="comic.jpg" alt="Comic">
+<a href="comic.blend">Comic</a></p>
+<h4 id="robot" tabindex="-1"><a class="header-anchor" href="#robot">Robot</a></h4>
+<p>Texture &amp; Parenting &amp; Animation
+<img src="robot.jpg" alt="Robot">
+<a href="robot.blend">Robot</a> &amp; <a href="robot.png">Robot Texture</a></p>
+<h4 id="water" tabindex="-1"><a class="header-anchor" href="#water">Water</a></h4>
+<p>Fluid Simulation &amp; Glass Material
+<img src="water.jpg" alt="Water">
+<a href="water.blend">Water</a></p>
+<h4 id="body" tabindex="-1"><a class="header-anchor" href="#body">Body</a></h4>
+<p>Bones &amp; Skin Modifier
+<img src="body.jpg" alt="Body">
+<a href="body.blend">Body</a></p>
+<h4 id="cloud" tabindex="-1"><a class="header-anchor" href="#cloud">Cloud</a></h4>
+<p>Volumetrics &amp; Voronoi Texture
+<img src="cloud.jpg" alt="Cloud">
+<a href="cloud.blend">Cloud</a></p>
+<h4 id="vfx" tabindex="-1"><a class="header-anchor" href="#vfx">VFX</a></h4>
+<p>Tracker &amp; Solve Camera Motion
+<img src="vfx.jpg" alt="VFX">
+<a href="vfx.blend">VFX</a> &amp; <a href="vfx.mp4">VFX Video</a></p>
+
+        </main>
+        <footer class="footer">
+    <p class="small-print">wir spielen Karten-, Brett- und Rollenspiele und Tabletop</p>
+</footer>
+
+    </body>
+
+</html>
