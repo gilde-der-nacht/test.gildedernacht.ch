@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <title>Newsletter | Gilde der Nacht</title>
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="preconnect" href="https://kit.fontawesome.com">
-    <script src="https://kit.fontawesome.com/ed5a2d737b.js" crossorigin="anonymous" defer></script>
-    <script src="/scripts/script.js" type="module" defer></script>
-    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
-    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <title>Newsletter | Gilde der Nacht</title>
+        <link rel="stylesheet" href="/style/style.css">
+        <link rel="preconnect" href="https://kit.fontawesome.com">
+        <script src="https://kit.fontawesome.com/ed5a2d737b.js" crossorigin="anonymous" defer></script>
+        <script src="/scripts/script.js" type="module" defer></script>
+        <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
+        <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -33,9 +33,9 @@
 <meta name="msapplication-wide310x150logo" content="/widetile.png" />
 <meta name="msapplication-square310x310logo" content="/largetile.png" />
 
-</head>
+    </head>
 
-<body class=gdn>
+    <body class=gdn>
         <header class="header">
     <input type="checkbox" id="mobile-navigation" class="hidden" />
 <label for="mobile-navigation" class="toggle-mobile-navigation" data-toggle-mobile-navigation>
@@ -58,11 +58,16 @@
     </svg>
 </label>
 <aside class="mobile-menu-container">
-    <nav class="main-navigation">
+    <nav class="main-navigation" aria-label="main navigation">
     <ul><li><a href="/">Startseite</a></li>
-<li><a href="/newsletter/">Newsletter</a></li>
 <li><a href="/kontakt/">Kontakt</a></li></ul>
 </nav>
+
+    
+    <nav class="secondary-navigation" aria-label="secondary navigation">
+        <ul><li><a href="/newsletter/">Newsletter</a></li></ul>
+    </nav>
+
 
     <footer class="mobile-footer">
     <button class="button hidden" data-toggle-theme>
@@ -167,10 +172,10 @@
 </header>
 
         <main class="main-content content">
+            
+            
 
-
-
-            <section><form action="https://gildedernacht.us9.list-manage.com/subscribe/post?u=ac8c826d7db864c54a3c2f001&amp;id=c6bec31754" method="post"><h1>Erinnerungs-Newsletter</h1><label>E-Mail-Adresse<input type="email" value="" name="EMAIL" placeholder="E-Mail-Adresse" required=""></label><label>Vorname<input type="text" value="" name="FNAME" placeholder="Vorname" required=""></label><label>Nachname<input type="text" value="" name="LNAME" placeholder="Nachname" required=""></label><h2>Thema</h2><p>Wähle mindestens ein Thema aus, das dich interessiert. Ansonsten wirst du keine E-Mails erhalten.</p><ul><li><label><input type="checkbox" value="128" name="group[48105][128]">Brettspiele</label></li><li><label><input type="checkbox" value="256" name="group[48105][256]">Rollenspiele</label></li><li><label><input type="checkbox" value="512" name="group[48105][512]">Tabletop</label></li></ul><h2>Häufigkeit</h2><p>Wenn du dich für weniger häufige E-Mails entscheidest, werden wir dich hauptsächlich über grössere Events informieren.</p><ul><li><label><input type="radio" value="1024" name="group[48109]">max. 2/Monat</label></li><li><label><input type="radio" value="2048" name="group[48109]">max. 8/Jahr</label></li></ul><button type="submit" class="button-accent">Abonnieren</button></form></section>
+            <section class="content"><h1>Erinnerungs-Newsletter</h1><form action="https://gildedernacht.us9.list-manage.com/subscribe/post?u=ac8c826d7db864c54a3c2f001&amp;id=c6bec31754" method="post" class="content"><label>E-Mail-Adresse<input type="email" value="" name="EMAIL" placeholder="E-Mail-Adresse" required=""></label><label>Vorname<input type="text" value="" name="FNAME" placeholder="Vorname" required=""></label><label>Nachname<input type="text" value="" name="LNAME" placeholder="Nachname" required=""></label><h2>Thema</h2><p>Wähle mindestens ein Thema aus, das dich interessiert.<br />Ansonsten wirst du keine E-Mails erhalten.</p><ul role="list" class="checkbox-list"><li><label class="input-checkbox"><input type="checkbox" value="128" name="group[48105][128]" checked>Brettspiele</label></li><li><label class="input-checkbox"><input type="checkbox" value="256" name="group[48105][256]" false>Rollenspiele</label></li><li><label class="input-checkbox"><input type="checkbox" value="512" name="group[48105][512]" false>Tabletop</label></li></ul><h2>Häufigkeit</h2><p>Wenn du dich für weniger häufigere E-Mails entscheidest <em>(maximal 8 E-Mails / Jahr)</em>,<br />werden wir dich hauptsächlich über grössere Events informieren.</p><ul role="list" class="radio-list"><li><label class="input-radio"><input type="radio" value="1024" name="group[48109]" checked>maximal 2 E-Mails / Monat</label></li><li><label class="input-radio"><input type="radio" value="2048" name="group[48109]" false>maximal 8 E-Mails / Jahr</label></li></ul><button type="submit" class="button-success">Abonnieren</button></form></section>
 
         </main>
         <footer class="footer">
