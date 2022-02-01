@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        <title>Verein | Gilde der Nacht</title>
-        <link rel="stylesheet" href="/style/style.css">
-        <link rel="preconnect" href="https://kit.fontawesome.com">
-        <script src="https://kit.fontawesome.com/ed5a2d737b.js" crossorigin="anonymous" defer></script>
-        <script src="/scripts/script.js" type="module" defer></script>
-        <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
-        <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Verein | Gilde der Nacht</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/scripts/script.js" type="module" defer></script>
+    <script src="/icons/duotone.min.js" defer></script>
+    <script src="/icons/fontawesome.min.js" defer></script>
+    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
+    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -35,7 +35,7 @@
 
     </head>
 
-    <body class=gdn>
+<body class=gdn>
         <header class="header">
     <input type="checkbox" id="mobile-navigation" class="hidden" />
 <label for="mobile-navigation" class="toggle-mobile-navigation" data-toggle-mobile-navigation>
@@ -66,14 +66,19 @@
 
     
     <nav class="secondary-navigation" aria-label="secondary navigation">
-        <ul><li><a href="/newsletter/">Newsletter</a></li></ul>
+        <ul><li><a href="/chat/">Chat</a></li>
+<li><a href="/newsletter/">Newsletter</a></li></ul>
     </nav>
 
 
     <footer class="mobile-footer">
     <button class="button hidden" data-toggle-theme>
-    <i class="fa-duotone fa-sun-bright hidden" data-toggle-theme-to-light></i>
-    <i class="fa-duotone fa-moon-stars" data-toggle-theme-to-dark></i>
+    <span data-toggle-theme-to-light class="hidden">
+        <i class="fa-duotone fa-sun-bright"></i>
+    </span>
+    <span data-toggle-theme-to-dark>
+        <i class="fa-duotone fa-moon-stars"></i>
+    </span>
 </button>
 
 </footer>
@@ -178,11 +183,12 @@
 
             <h1 id="verein" tabindex="-1"><a class="header-anchor" href="#verein">Verein</a></h1>
 <p>Die <strong>Gilde der Nacht</strong> fördert das Spielhobby in und um Luzern. Wir organisieren das ganze Jahr jede Menge Events, an denen du neue Freundschaften schliesst und viele tolle Spiele kennenlernst. Komm doch vorbei und sag Hallo!</p>
-<p><a href="/statuten" class="button button-small button-special"><i class="fa-duotone fa-arrow-turn-down-right event-icon"></i>Vereinsstatuten</a></p>
+<p><a href="/statuten" class="button button-small button-special"> <i class="fa-duotone fa-arrow-turn-down-right event-icon"></i> Vereinsstatuten </a></p>
 <h2 id="geschichte" tabindex="-1"><a class="header-anchor" href="#geschichte">Geschichte</a></h2>
 <p>Der erste Gilde der Nacht Verein wurde im <strong>Spätherbst 2011</strong> von 4 passionierten <em>Magic the Gathering</em>-Spielern gegründet und unsere Events entwickelten sich rasch zu einem beliebten Treffpunkt für Spieler aus der Region.</p>
 <p>3 Jahre später wurde uns klar, das Magic nicht alles ist (versteht uns nicht falsch, Magic ist ein fantastisches Spiel — aber manchmal haben wir das Bedürfnis uns gegenseitig mit Plastikminiaturen das Leben zur Hölle zu machen oder dank einem genialen Partyspiel, vor Lachen in die Hosen zu machen). So entstand der Spielverein Element 15.</p>
 <p>Als auch dieser rasch an Popularität zunahm, beschlossen wir an der Fusions-Generalversammlung vom 9. Mai 2015 diese beiden Vereine zusammenzulegen und setzten uns zum Ziel, alle glücklich zu machen; Ob Magic-, Strategie-, Party-, Rollen- oder Tabletop-Spieler:innen.</p>
+<p> <figure aria-labelledby="caption-r_li_HuOXv"> <picture> <source type="image/avif" srcset="/verein/images/r_li_HuOXv-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/verein/images/r_li_HuOXv-600.jpeg 600w" sizes="100vw">  <img src="/verein/images/r_li_HuOXv-600.jpeg" width="600" height="400" alt="Der Alt Text hier" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-r_li_HuOXv">Der Alt Text hier</figcaption> </figure> </p>
 
         </main>
         <footer class="footer">

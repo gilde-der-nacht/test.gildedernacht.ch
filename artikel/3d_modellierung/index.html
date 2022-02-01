@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        
-        <title>3D Modellierung | Gilde der Nacht</title>
-        <link rel="stylesheet" href="/style/style.css">
-        <link rel="preconnect" href="https://kit.fontawesome.com">
-        <script src="https://kit.fontawesome.com/ed5a2d737b.js" crossorigin="anonymous" defer></script>
-        <script src="/scripts/script.js" type="module" defer></script>
-        <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
-        <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>3D Modellierung | Gilde der Nacht</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/scripts/script.js" type="module" defer></script>
+    <script src="/icons/duotone.min.js" defer></script>
+    <script src="/icons/fontawesome.min.js" defer></script>
+    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/krona-one-normal-400.woff2" type="font/woff2">
+    <link rel="preload" as="font" crossorigin="anonymous" href="/fonts/dm-sans-normal-400.woff2" type="font/woff2">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -35,7 +35,7 @@
 
     </head>
 
-    <body class=gdn>
+<body class=gdn>
         <header class="header">
     <input type="checkbox" id="mobile-navigation" class="hidden" />
 <label for="mobile-navigation" class="toggle-mobile-navigation" data-toggle-mobile-navigation>
@@ -66,14 +66,19 @@
 
     
     <nav class="secondary-navigation" aria-label="secondary navigation">
-        <ul><li><a href="/newsletter/">Newsletter</a></li></ul>
+        <ul><li><a href="/chat/">Chat</a></li>
+<li><a href="/newsletter/">Newsletter</a></li></ul>
     </nav>
 
 
     <footer class="mobile-footer">
     <button class="button hidden" data-toggle-theme>
-    <i class="fa-duotone fa-sun-bright hidden" data-toggle-theme-to-light></i>
-    <i class="fa-duotone fa-moon-stars" data-toggle-theme-to-dark></i>
+    <span data-toggle-theme-to-light class="hidden">
+        <i class="fa-duotone fa-sun-bright"></i>
+    </span>
+    <span data-toggle-theme-to-dark>
+        <i class="fa-duotone fa-moon-stars"></i>
+    </span>
 </button>
 
 </footer>
@@ -215,7 +220,7 @@
 <li>Eine Maus, idealerweise eine mit Scroll-Rad und einer mittleren Maustaste, was oftmals das Scroll-Rad, das man auch drücken kann, selber ist (erleichtert die Bedienung, geht aber auch ohne)</li>
 <li>Idealerweise eine Tastatur mit einem Ziffernblock (erleichtert ebenfalls die Bedienung, geht aber auch ohne)</li>
 </ul>
-<p><img src="blender-2.82-first-screen.png" alt="Blender 2.82 First Screen"></p>
+<p> <figure aria-labelledby="caption-qM8ZlzuwC2"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/qM8ZlzuwC2-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/qM8ZlzuwC2-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/qM8ZlzuwC2-600.jpeg" width="600" height="398" alt="Blender 2.82 First Screen" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-qM8ZlzuwC2">Blender 2.82 First Screen</figcaption> </figure> </p>
 <h3 id="shortcuts" tabindex="-1"><a class="header-anchor" href="#shortcuts">Shortcuts</a></h3>
 <div class="table-container"><table>
 <thead>
@@ -325,43 +330,43 @@
 <h3 id="beispiele" tabindex="-1"><a class="header-anchor" href="#beispiele">Beispiele</a></h3>
 <h4 id="airplane" tabindex="-1"><a class="header-anchor" href="#airplane">Airplane</a></h4>
 <p>Mirror Modifier &amp; Subdivision Modifier
-<img src="airplane.jpg" alt="Airplane">
+ <figure aria-labelledby="caption-cEgMLVK8ds"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/cEgMLVK8ds-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/cEgMLVK8ds-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/cEgMLVK8ds-600.jpeg" width="600" height="457" alt="Airplane" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-cEgMLVK8ds">Airplane</figcaption> </figure> 
 <a href="airplane.blend">Airplane</a></p>
 <h4 id="rope" tabindex="-1"><a class="header-anchor" href="#rope">Rope</a></h4>
 <p>Array Modifier &amp; Screw Modifier &amp; Curve Modifier
-<img src="rope.jpg" alt="Rope">
+ <figure aria-labelledby="caption-5ZTanivocH"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/5ZTanivocH-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/5ZTanivocH-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/5ZTanivocH-600.jpeg" width="600" height="405" alt="Rope" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-5ZTanivocH">Rope</figcaption> </figure> 
 <a href="rope.blend">Rope</a></p>
 <h4 id="cloth" tabindex="-1"><a class="header-anchor" href="#cloth">Cloth</a></h4>
 <p>Cloth Simulation &amp; Collision Simulation &amp; Vertex Group
-<img src="cloth.jpg" alt="Cloth">
+ <figure aria-labelledby="caption-HvH2xE4mIT"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/HvH2xE4mIT-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/HvH2xE4mIT-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/HvH2xE4mIT-600.jpeg" width="600" height="496" alt="Cloth" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-HvH2xE4mIT">Cloth</figcaption> </figure> 
 <a href="cloth.blend">Cloth</a></p>
 <h4 id="terrain" tabindex="-1"><a class="header-anchor" href="#terrain">Terrain</a></h4>
 <p>Displace Modifier &amp; ColorRamp Material
-<img src="terrain.jpg" alt="Terrain">
+ <figure aria-labelledby="caption-kv1Fd5Kazs"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/kv1Fd5Kazs-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/kv1Fd5Kazs-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/kv1Fd5Kazs-600.jpeg" width="600" height="400" alt="Terrain" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-kv1Fd5Kazs">Terrain</figcaption> </figure> 
 <a href="terrain.blend">Terrain</a> &amp; <a href="wikipedia-heightmap.png">Terrain Heightmap</a></p>
 <h4 id="comic" tabindex="-1"><a class="header-anchor" href="#comic">Comic</a></h4>
 <p>Z-Fighting &amp; Smooth/Flat Shading &amp; ColorRamp Material
-<img src="comic.jpg" alt="Comic">
+ <figure aria-labelledby="caption-pUBtDBZu0G"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/pUBtDBZu0G-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/pUBtDBZu0G-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/pUBtDBZu0G-600.jpeg" width="600" height="406" alt="Comic" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-pUBtDBZu0G">Comic</figcaption> </figure> 
 <a href="comic.blend">Comic</a></p>
 <h4 id="robot" tabindex="-1"><a class="header-anchor" href="#robot">Robot</a></h4>
 <p>Texture &amp; Parenting &amp; Animation
-<img src="robot.jpg" alt="Robot">
+ <figure aria-labelledby="caption-47-0FwF8yb"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/47-0FwF8yb-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/47-0FwF8yb-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/47-0FwF8yb-600.jpeg" width="600" height="457" alt="Robot" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-47-0FwF8yb">Robot</figcaption> </figure> 
 <a href="robot.blend">Robot</a> &amp; <a href="robot.png">Robot Texture</a></p>
 <h4 id="water" tabindex="-1"><a class="header-anchor" href="#water">Water</a></h4>
 <p>Fluid Simulation &amp; Glass Material
-<img src="water.jpg" alt="Water">
+ <figure aria-labelledby="caption-dwtvCqQShQ"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/dwtvCqQShQ-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/dwtvCqQShQ-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/dwtvCqQShQ-600.jpeg" width="600" height="453" alt="Water" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-dwtvCqQShQ">Water</figcaption> </figure> 
 <a href="water.blend">Water</a></p>
 <h4 id="body" tabindex="-1"><a class="header-anchor" href="#body">Body</a></h4>
 <p>Bones &amp; Skin Modifier
-<img src="body.jpg" alt="Body">
+ <figure aria-labelledby="caption-p0ZzQwo6CR"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/p0ZzQwo6CR-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/p0ZzQwo6CR-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/p0ZzQwo6CR-600.jpeg" width="600" height="450" alt="Body" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-p0ZzQwo6CR">Body</figcaption> </figure> 
 <a href="body.blend">Body</a></p>
 <h4 id="cloud" tabindex="-1"><a class="header-anchor" href="#cloud">Cloud</a></h4>
 <p>Volumetrics &amp; Voronoi Texture
-<img src="cloud.jpg" alt="Cloud">
+ <figure aria-labelledby="caption-47EezIB0YT"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/47EezIB0YT-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/47EezIB0YT-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/47EezIB0YT-600.jpeg" width="600" height="413" alt="Cloud" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-47EezIB0YT">Cloud</figcaption> </figure> 
 <a href="cloud.blend">Cloud</a></p>
 <h4 id="vfx" tabindex="-1"><a class="header-anchor" href="#vfx">VFX</a></h4>
 <p>Tracker &amp; Solve Camera Motion
-<img src="vfx.jpg" alt="VFX">
+ <figure aria-labelledby="caption-tUDtnQJkNa"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/tUDtnQJkNa-600.avif 600w" sizes="100vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/tUDtnQJkNa-600.jpeg 600w" sizes="100vw">  <img src="/artikel/3d_modellierung/tUDtnQJkNa-600.jpeg" width="600" height="412" alt="VFX" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-tUDtnQJkNa">VFX</figcaption> </figure> 
 <a href="vfx.blend">VFX</a> &amp; <a href="vfx.mp4">VFX Video</a></p>
 
         </main>
