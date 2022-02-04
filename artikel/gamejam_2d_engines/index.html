@@ -185,16 +185,23 @@
 <nav class="table-of-contents"><ol><li><a href="#gedanken">Gedanken</a></li><li><a href="#engines">Engines</a></li><li><a href="#anmerkungen">Anmerkungen</a></li></ol></nav><h2 id="gedanken" tabindex="-1"><a class="header-anchor" href="#gedanken">Gedanken</a></h2>
 <ul>
 <li>Gibt es ein paar einfach zu verstehende, aber auch umfangreichere Tutorials?</li>
-<li>Gibt es eine Dokumentation zu allen Funktionen? Beispiele in der Dokumentation?</li>
-<li>Wird die Engine noch weiterenwickelt?</li>
+<li>Gibt es eine Dokumentation zu den Funktionen? Beispiele in der Dokumentation?</li>
+<li>Wird die Software noch weiterenwickelt?</li>
+<li>Gibt es eine Community die einem weiterhelfen könnte?</li>
+<li>Gibt es spezifische Unterstützung für 2D?</li>
+<li>Was hat die Software für Funktionen? Grafik? Sound/Musik? Text? Netzwerk? Animation? Dialog? Partikel Effekte? Debugging? Performance Monitor? State Handling?</li>
+<li>Gibt es die Möglichkeit Logik umzusetzen ohne eine Programmiersprache zu kennen?</li>
+<li>Falls die Software eine Programmiersprache verwendet, ist es eine Sprache die bekannt ist?</li>
+<li>Wie lange dauert es wenn man eine kleine Änderung an der Logik vornimmt, bis man das Resultat auf dem Bildschirm ausprobieren kann? (Edit-Compile-Run Cycle)</li>
+<li>Wie kompliziert und zeitaufwändig ist es ein «Hello World» Beispiel umzusetzen?</li>
+<li>Ist es gut möglich das Resultat auf einer Webseite laufen zu lassen?</li>
+</ul>
+<p>Weiterführendes</p>
+<ul>
 <li>Kann ich die Engine selber erweitern?</li>
-<li>Was hat die Engine für Funktionen? Grafik? Sound? Musik? Text? Netzwerk? Animation? Dialog? Partikel Effekte? Debugging? Performance? State Handling?</li>
 <li>Kann ich bei Problemen selber aktiv werden und eventuell sogar ein Patch submitten?</li>
 <li>Muss ich zusätzliche Software installieren damit ich die Engine ausprobieren kann?</li>
-<li>Ist es möglich die Engine ohne C/C++ Kentnisse zu verwenden?</li>
 <li>Ist ein Pfad denkbar zu einer anderen Engine?</li>
-<li>Falls die Engine eine Scriptsprache verwendet, ist es eine Sprache die auch sonst bekannt ist?</li>
-<li>Wie lange dauert es wenn man eine kleine Änderung an der Logik vornimmt, bis man das Resultat auf dem Bildschirm ausprobieren kann? (Edit-Compile-Run Cycle)</li>
 </ul>
 <h2 id="engines" tabindex="-1"><a class="header-anchor" href="#engines">Engines</a></h2>
 <div class="table-container"><table>
@@ -237,7 +244,7 @@
 <td>Event/Action Board, JavaScript</td>
 </tr>
 <tr>
-<td>Godot Engine</td>
+<td>Godot</td>
 <td><a href="https://godotengine.org/">godotengine.org</a></td>
 <td>Ja <a href="https://github.com/">github.com</a></td>
 <td>Ja</td>
@@ -293,29 +300,26 @@
 <td>GML, DND</td>
 </tr>
 <tr>
-<td>Cocos2D</td>
-<td><a href="https://www.cocos.com/en/cocos2dx">cocos.com</a></td>
-<td>Nein</td>
+<td>Cocos Creator</td>
+<td><a href="https://www.cocos.com/en/creator/download">cocos.com</a></td>
 <td>???</td>
+<td>Ja</td>
 <td>???</td>
 </tr>
 </tbody>
 </table>
 </div><h2 id="anmerkungen" tabindex="-1"><a class="header-anchor" href="#anmerkungen">Anmerkungen</a></h2>
+<p>Eine lose und opinionated Sammlung von Fragen und Gedanken zu den jeweiligen Engines.</p>
 <ul>
 <li>ct.js
 <ul>
 <li>Verwendet intern PixiJS.</li>
 <li>Verwendet nicht übliche Begriffe wie Scene, Map, Sprite, … und erwähnt das auch in der Dokumentation. Grund?</li>
-<li>Der Write/Run/Play-Loop dauert relativ lange.</li>
+<li>Der Edit/Compile/Run-Loop dauert länger als z.B. bei GDevelop oder Godot, und das obwohl es eigentlich Engine explizit für HTML5 ist.</li>
 <li>Text Objekte können nur im Code erstellt werden.</li>
-<li>Hat ein tween Beispiel wo then verwendet wird, was ein Hinweis sein könnte dass man async/await noch nicht kennt? Auch wenn man await verwendet gibt es ein Fehler, weil z.B. OnCreate nicht mit async markiert ist.</li>
+<li>Hat ein tween Beispiel wo «then» verwendet wird, was ein Hinweis sein könnte dass man async/await noch nicht kennt? Auch wenn man await verwendet gibt es ein Fehler, weil z.B. OnCreate nicht mit async markiert ist.</li>
 <li>Kann man Objekte in einem Room wirklich nicht manuell verschieben?</li>
-</ul>
-</li>
-<li>PixiJS
-<ul>
-<li>Nicht spezifisch eine Game Engine.</li>
+<li>Scheint keinen eigenen Loop für Physik/Collision zu haben, d.h. wahrscheinlich wird alles von der Framerate abhängig gemacht, was gefährlich ist.</li>
 </ul>
 </li>
 <li>Melon JS
@@ -325,7 +329,10 @@
 </li>
 <li>Unity
 <ul>
-<li>Ein leeres Projekt ist einige MB gross (Thomas: meines war 200 MB, stimmt das?) und hat hunderte von Dateien. Die <a href="https://github.com/github/gitignore/blob/main/Unity.gitignore">gitignore</a> Datei die GitHub offiziell vorschlägt ist verhältnismässig gross.</li>
+<li>Man muss zuerst ein Unity Konto erstellen, dann den Unity Hub herunterladen, um dann die Engine herunterzuladen und zu installieren.</li>
+<li>Ein leeres Projekt ist einige MB gross (2022-02-02 ein leeres Core 2D ist 130 MB) und hat hunderte von Dateien. Die <a href="https://github.com/github/gitignore/blob/main/Unity.gitignore">gitignore</a> Datei die GitHub offiziell vorschlägt ist verhältnismässig gross. Eventuell wird man git LFS benötigen.</li>
+<li>Kleine Änderung z.B. an einer Scene, führen oft dazu dass sich eine Datei teilweise komplett ändert (es gibt keine unification) was die Verwendung von git/diffs nicht vereinfacht.</li>
+<li>Man braucht zusätzlich einen Code Editor (z.B. Visual Studio Code) wenn man in C# entwickeln möchte.</li>
 </ul>
 </li>
 <li>Phaser
@@ -336,7 +343,7 @@
 <li>Hat viele Beispiele (&gt; 1700) die man Online ausprobieren und verändern kann.</li>
 <li>Die kostenlosten Version des <a href="https://phasereditor2d.com/pricing/">Editors</a> ist eingeschränkt.</li>
 <li>Verwendet intern PixiJS.</li>
-<li>Bei Events wird die Event Source nicht mitgegeben, wie das sonst solche Event System oft machen, womit es mühsamer wird ein Event generisch zu schreiben, weil man immer manuell muss (Closure, …).</li>
+<li>Bei Events wird die Event Source nicht mitgegeben, wie das sonst Event System oft der Fall, womit es mühsamer wird ein Event generisch zu schreiben (z.B. mit Closures).</li>
 <li>Dokumentation bescheibt zwar Klassen, aber die Methoden der Klassen werden in den Beispielen selten direkt verwendet sondern immer indirekt. Auch das instanzieren erfolgt meistens indirekt. Es fühlt sich komisch an, dass für die Instanzierung von Klassen oft mehrere Optionen vorhanden sind. Die Dokumentation selber hat keine Beispiele, so dass oft nicht klar ist wie man etwas verwendet.</li>
 </ul>
 </li>
@@ -344,7 +351,7 @@
 <ul>
 <li>Es gibt ein JavaScript SDK um die Engine zu erweitern.</li>
 <li>Unklar ob es bei der kostenlose Variante überhaupt möglich ist ein Spiel auf eine Webseite zu laden.</li>
-<li>Education Edition ist ab ca. 30 CHF / Monat zu haben.</li>
+<li>Education Edition wäre ab ca. 30 CHF / Person zu haben.</li>
 </ul>
 </li>
 <li>GameMaker Studio 2
@@ -361,16 +368,29 @@
 </li>
 <li>GDevelop
 <ul>
-<li>Rotationen gehen im Uhrzeigersinn, was wahrscheinlich anderst ist als bei der grossen Mehrheit. Das könnte unter Umständen für Änfänger einfacher sein, weil es wie eine Uhr ist, aber dann wäre es konsequenter gewesen die 0° dann auch oben zu machen, was aber nicht der Fall ist.</li>
+<li>Rotationen gehen im Uhrzeigersinn, was wahrscheinlich anders ist als bei der grossen Mehrheit. Das könnte unter Umständen für Änfänger einfacher sein, weil es wie eine Uhr ist, aber dann wäre es konsequenter gewesen die 0° dann auch oben zu machen, was aber nicht der Fall ist.</li>
 <li>Eine Änderung im Event Board kann man sofort ausprobieren, ohne etwas zu speichern.</li>
-<li>Es scheint relativ aufwändig automatisch Aktionen nacheinander ausführen zu lassen z.B. Führe Tween-1 dann Tween-2 und dann Tween-3 aus.</li>
+<li>Es scheint relativ aufwändig automatisch Aktionen nacheinander ausführen zu lassen z.B. Führe Tween-1 dann Tween-2 und dann Tween-3  aus.</li>
+</ul>
+</li>
+<li>Cocos Creator
+<ul>
+<li>Software muss über ein zusätzliche Software (wie Unity) runtergeladen werden.</li>
+<li>Editor scheint für Windows oder Mac zu funktionieren.</li>
 </ul>
 </li>
 <li>Three.JS
 <ul>
-<li>Ist eher für 3D, ist als Beispiel hier wie eine Dokumentation aussehen könnte.</li>
+<li>Ist als Beispiel hier wie eine Dokumentation aussehen könnte.</li>
+<li>Ist eher aus das 3D Rendering allein spezialisiert, keine dedizierte Game Engine.</li>
 <li>Sehr übersichtliche Dokumentation, wo jede Klasse ein kleines Beispiel hat.</li>
 <li>Viele gute Beispiele, mit unterschiedlichen Komplexitätsstufen.</li>
+</ul>
+</li>
+<li>Pixi.JS
+<ul>
+<li>Ebenfalls wie Three.JS, eine sehr gute Dokumentation und viele gute Beispiele.</li>
+<li>Ist eher auf das 2D Rendering spezialisiert, keine dedizierte Game Engine.</li>
 </ul>
 </li>
 </ul>
