@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     
-    <title>3D Modellierung | Gilde der Nacht</title>
+    <title>One Shot Night | Gilde der Nacht</title>
     <link rel="stylesheet" href="/style/style.css">
     <script src="/scripts/script.js" type="module" defer></script>
     <script src="/icons/duotone.min.js" defer></script>
@@ -183,193 +183,57 @@
             
             
 
-            <h1 id="3d-modellierung" tabindex="-1"><a class="header-anchor" href="#3d-modellierung">3D Modellierung</a></h1>
-<nav class="table-of-contents"><ol><li><a href="#grundlagen">Grundlagen</a><ol><li><a href="#software-fuer-kuenstlerinnen">Software für Künstler:innen</a></li><li><a href="#software-ingenieurinnen">Software Ingenieur:innen</a></li><li><a href="#schwierigkeitsgrade">Schwierigkeitsgrade</a></li></ol></li><li><a href="#blender">Blender</a><ol><li><a href="#vorbereitung">Vorbereitung</a></li><li><a href="#shortcuts">Shortcuts</a></li><li><a href="#funktionen">Funktionen</a></li><li><a href="#begriffe">Begriffe</a></li><li><a href="#problemstellen">Problemstellen</a></li><li><a href="#videos">Videos</a></li><li><a href="#beispiele">Beispiele</a><ol><li><a href="#airplane">Airplane</a></li><li><a href="#rope">Rope</a></li><li><a href="#cloth">Cloth</a></li><li><a href="#terrain">Terrain</a></li><li><a href="#comic">Comic</a></li><li><a href="#robot">Robot</a></li><li><a href="#water">Water</a></li><li><a href="#body">Body</a></li><li><a href="#cloud">Cloud</a></li><li><a href="#vfx">VFX</a></li></ol></li></ol></li></ol></nav><h2 id="grundlagen" tabindex="-1"><a class="header-anchor" href="#grundlagen">Grundlagen</a></h2>
-<p>Hinweis: Dieses Dokument ist die Grundlage für ein Workshop. Viele Begriffe werden hier bewusst nicht erklärt, sondern sind lediglich eine Diskussionsgrundlage und lassen sich einfacher zeigen als erklären.</p>
-<h3 id="software-fuer-kuenstlerinnen" tabindex="-1"><a class="header-anchor" href="#software-fuer-kuenstlerinnen">Software für Künstler:innen</a></h3>
-<p>Der Fokus liegt darauf mit einer grossen Anzahl an verschiedenen Werkzeugen möglichst effizient unterschiedlichste Modelle erstellen zu können. Die Ästhetik steht im Vordergrund.</p>
-<ul>
-<li><a href="https://www.blender.org/">Blender</a>: Modellierung, Animationen, Texturen, Simulation, Visualisierung, VFX, … <em><strong>OpenSource</strong></em></li>
-<li><a href="https://www.sketchup.com/products/sketchup-for-web">SketchUp</a>: Modellierung für Anfänger</li>
-</ul>
-<h3 id="software-ingenieurinnen" tabindex="-1"><a class="header-anchor" href="#software-ingenieurinnen">Software Ingenieur:innen</a></h3>
-<p>Der Fokus ist oft dass man das Resultat irgendwie produziert (Fräsen, 3D Drucken, …). In der Produktion sind unter anderem Reproduzierbarkeit, Massangaben und Toleranzen wichtig.</p>
-<ul>
-<li><a href="https://www.blockscad3d.com/">BlocksCAD</a>: Grafische Oberfläche für OpenSCAD</li>
-<li><a href="https://www.freecadweb.org/">FreeCAD</a>: CAD Programm <em><strong>OpenSource</strong></em></li>
-<li><a href="https://www.autodesk.com/products/fusion-360/personal">Fusion 360</a>: Professionelles CAD Programm (zwingende Anmeldung)</li>
-<li><a href="https://www.leocad.org/">LeoCAD</a>: Modelle mit Klemm-Bausteinen aufbauen <em><strong>OpenSource</strong></em></li>
-<li><a href="https://openjscad.com/">OpenJSCAD</a>: Online Variante von OpenSCAD <em><strong>OpenSource</strong></em></li>
-<li><a href="https://openscad.org/">OpenSCAD</a>: Modelle mit Text aufbauen <em><strong>OpenSource</strong></em></li>
-<li><a href="https://www.tinkercad.com/">TinkerCAD</a>: Eingeschränktes aber einfaches CAD Programm</li>
-</ul>
-<h3 id="schwierigkeitsgrade" tabindex="-1"><a class="header-anchor" href="#schwierigkeitsgrade">Schwierigkeitsgrade</a></h3>
-<p>Objekte die nahezu nur aus Ecken und Kanten bestehen, oder solche die gleichmässig abgerundet sind, sind tendenziell einfacher zu modellieren. Je mehr Details ein Objekt hat desto aufwändiger wird das modellieren.</p>
-<p>Obwohl Menschen verhältnismässig gleichmässig wären, fallen uns oft kleine Unregelmässigkeiten in Proportionen auf (siehe auch <a href="https://de.wikipedia.org/wiki/Uncanny_Valley">Uncanny Valley</a>). Eine zusätzliche Schwierigkeit sind Kleider, die Haare und das texturieren des Gesichtes.</p>
-<ul>
-<li>Einfach: Gebäude, Möbel, Geschirr, Werkzeuge</li>
-<li>Mittel: Bäume, Kleider, Fahrzeuge</li>
-<li>Schwer: Tiere, Menschen</li>
-</ul>
-<h2 id="blender" tabindex="-1"><a class="header-anchor" href="#blender">Blender</a></h2>
-<p><a href="https://www.blender.org/">https://www.blender.org/</a></p>
-<p>Blender ist in den letzten Jahren zu einer der bekannteren Modellierungs-Software geworden. Blender wird seid 20 Jahren aktiv entwickelt, ständig erweitert und oft auch vereinfacht. Inzwischen gibt es auch viele kostenlose Plugins.</p>
-<h3 id="vorbereitung" tabindex="-1"><a class="header-anchor" href="#vorbereitung">Vorbereitung</a></h3>
-<p>Was benötigt man</p>
-<ul>
-<li>Die Software «Blender». Herunterladen und installieren: <a href="https://www.blender.org/download/">https://www.blender.org/download/</a></li>
-<li>Ein Laptop mit 3D Unterstützung (am besten Blender starten, wenn nach ein paar Sekunden der Bildschirm wie unten aussieht, stehen die Sterne schon mal günstig)</li>
-<li>Eine Maus, idealerweise eine mit Scroll-Rad und einer mittleren Maustaste, was oftmals das Scroll-Rad, das man auch drücken kann, selber ist (erleichtert die Bedienung, geht aber auch ohne)</li>
-<li>Idealerweise eine Tastatur mit einem Ziffernblock (erleichtert ebenfalls die Bedienung, geht aber auch ohne)</li>
-</ul>
-<p> <figure aria-labelledby="caption-qM8ZlzuwC2"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/qM8ZlzuwC2-300.avif 300w, /artikel/3d_modellierung/qM8ZlzuwC2-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/qM8ZlzuwC2-300.jpeg 300w, /artikel/3d_modellierung/qM8ZlzuwC2-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/qM8ZlzuwC2-300.jpeg" width="600" height="398" alt="Blender 2.82 First Screen" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-qM8ZlzuwC2">Blender 2.82 First Screen</figcaption> </figure> </p>
-<h3 id="shortcuts" tabindex="-1"><a class="header-anchor" href="#shortcuts">Shortcuts</a></h3>
-<div class="table-container"><table>
-<thead>
-<tr>
-<th>Taste</th>
-<th>Aktion</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Numpad 3</td>
-<td>View From X / Right</td>
-</tr>
-<tr>
-<td>Numpad 1</td>
-<td>View From Y / Front</td>
-</tr>
-<tr>
-<td>Numpad 7</td>
-<td>View From Z / Top</td>
-</tr>
-<tr>
-<td>Mittlere Maustaste</td>
-<td>View Rotate</td>
-</tr>
-<tr>
-<td>Shift + Mittlere Maustaste</td>
-<td>View Move</td>
-</tr>
-<tr>
-<td>Numpad .</td>
-<td>View Focus</td>
-</tr>
-<tr>
-<td>Tab</td>
-<td>Object/Edit Mode</td>
-</tr>
-<tr>
-<td>G</td>
-<td>Move</td>
-</tr>
-<tr>
-<td>S</td>
-<td>Scale</td>
-</tr>
-<tr>
-<td>R</td>
-<td>Rotate</td>
-</tr>
-<tr>
-<td>E</td>
-<td>Extrude</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Vertex Select Mode</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Edge Select Mode</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Face Select Mode</td>
-</tr>
-<tr>
-<td>Alt + Z</td>
-<td>X-Ray Mode</td>
-</tr>
-<tr>
-<td>F3</td>
-<td>Search</td>
-</tr>
-</tbody>
-</table>
-</div><h3 id="funktionen" tabindex="-1"><a class="header-anchor" href="#funktionen">Funktionen</a></h3>
-<ul>
-<li>Modeling</li>
-<li>Sculpting</li>
-<li>Texturing</li>
-<li>Shading</li>
-<li>Animation</li>
-<li>Rigging</li>
-<li>Simulation</li>
-<li>Rendering</li>
-<li>Game Engine</li>
-<li>Scripting</li>
-<li>Video Editing</li>
-<li>VFX</li>
-<li>Audio</li>
-</ul>
-<h3 id="begriffe" tabindex="-1"><a class="header-anchor" href="#begriffe">Begriffe</a></h3>
-<p>Allgemein: Vertex, Edge, Face, Normal, UV, Mesh, Rigid Body, Soft Body, Z-Buffer, Forward Kinematic (FK), Inverse Kinematic (IK), Shader, Bones, Rigging, Skinning, Shadow Mapping, Bidirectional Scattering Distribution Function (BSDF), Subsurface Scattering (SSS), Screen Space Ambient Occlusion (SSAO)</p>
-<p>Blender: Eevee, Cycles</p>
-<h3 id="problemstellen" tabindex="-1"><a class="header-anchor" href="#problemstellen">Problemstellen</a></h3>
-<ul>
-<li>Object Scaling = 1.0</li>
-<li>Lock Object Modes</li>
-<li>Speicherort Texturen</li>
-<li>Grouping/Collections</li>
-</ul>
-<h3 id="videos" tabindex="-1"><a class="header-anchor" href="#videos">Videos</a></h3>
-<ul>
-<li>Doughnut Tutorial: <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U">https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U</a></li>
-<li>Blender 2.8 Fundamentals: <a href="https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6">https://www.youtube.com/playlist?list=PLa1F2ddGya_-UvuAqHAksYnB0qL9yWDO6</a></li>
-</ul>
-<h3 id="beispiele" tabindex="-1"><a class="header-anchor" href="#beispiele">Beispiele</a></h3>
-<h4 id="airplane" tabindex="-1"><a class="header-anchor" href="#airplane">Airplane</a></h4>
-<p>Mirror Modifier &amp; Subdivision Modifier
- <figure aria-labelledby="caption-cEgMLVK8ds"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/cEgMLVK8ds-300.avif 300w, /artikel/3d_modellierung/cEgMLVK8ds-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/cEgMLVK8ds-300.jpeg 300w, /artikel/3d_modellierung/cEgMLVK8ds-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/cEgMLVK8ds-300.jpeg" width="600" height="457" alt="Airplane" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-cEgMLVK8ds">Airplane</figcaption> </figure> 
-<a href="airplane.blend">Airplane</a></p>
-<h4 id="rope" tabindex="-1"><a class="header-anchor" href="#rope">Rope</a></h4>
-<p>Array Modifier &amp; Screw Modifier &amp; Curve Modifier
- <figure aria-labelledby="caption-5ZTanivocH"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/5ZTanivocH-300.avif 300w, /artikel/3d_modellierung/5ZTanivocH-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/5ZTanivocH-300.jpeg 300w, /artikel/3d_modellierung/5ZTanivocH-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/5ZTanivocH-300.jpeg" width="600" height="405" alt="Rope" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-5ZTanivocH">Rope</figcaption> </figure> 
-<a href="rope.blend">Rope</a></p>
-<h4 id="cloth" tabindex="-1"><a class="header-anchor" href="#cloth">Cloth</a></h4>
-<p>Cloth Simulation &amp; Collision Simulation &amp; Vertex Group
- <figure aria-labelledby="caption-HvH2xE4mIT"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/HvH2xE4mIT-300.avif 300w, /artikel/3d_modellierung/HvH2xE4mIT-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/HvH2xE4mIT-300.jpeg 300w, /artikel/3d_modellierung/HvH2xE4mIT-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/HvH2xE4mIT-300.jpeg" width="600" height="496" alt="Cloth" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-HvH2xE4mIT">Cloth</figcaption> </figure> 
-<a href="cloth.blend">Cloth</a></p>
-<h4 id="terrain" tabindex="-1"><a class="header-anchor" href="#terrain">Terrain</a></h4>
-<p>Displace Modifier &amp; ColorRamp Material
- <figure aria-labelledby="caption-kv1Fd5Kazs"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/kv1Fd5Kazs-300.avif 300w, /artikel/3d_modellierung/kv1Fd5Kazs-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/kv1Fd5Kazs-300.jpeg 300w, /artikel/3d_modellierung/kv1Fd5Kazs-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/kv1Fd5Kazs-300.jpeg" width="600" height="400" alt="Terrain" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-kv1Fd5Kazs">Terrain</figcaption> </figure> 
-<a href="terrain.blend">Terrain</a> &amp; <a href="wikipedia-heightmap.png">Terrain Heightmap</a></p>
-<h4 id="comic" tabindex="-1"><a class="header-anchor" href="#comic">Comic</a></h4>
-<p>Z-Fighting &amp; Smooth/Flat Shading &amp; ColorRamp Material
- <figure aria-labelledby="caption-pUBtDBZu0G"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/pUBtDBZu0G-300.avif 300w, /artikel/3d_modellierung/pUBtDBZu0G-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/pUBtDBZu0G-300.jpeg 300w, /artikel/3d_modellierung/pUBtDBZu0G-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/pUBtDBZu0G-300.jpeg" width="600" height="406" alt="Comic" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-pUBtDBZu0G">Comic</figcaption> </figure> 
-<a href="comic.blend">Comic</a></p>
-<h4 id="robot" tabindex="-1"><a class="header-anchor" href="#robot">Robot</a></h4>
-<p>Texture &amp; Parenting &amp; Animation
- <figure aria-labelledby="caption-47-0FwF8yb"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/47-0FwF8yb-300.avif 300w, /artikel/3d_modellierung/47-0FwF8yb-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/47-0FwF8yb-300.jpeg 300w, /artikel/3d_modellierung/47-0FwF8yb-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/47-0FwF8yb-300.jpeg" width="600" height="457" alt="Robot" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-47-0FwF8yb">Robot</figcaption> </figure> 
-<a href="robot.blend">Robot</a> &amp; <a href="robot.png">Robot Texture</a></p>
-<h4 id="water" tabindex="-1"><a class="header-anchor" href="#water">Water</a></h4>
-<p>Fluid Simulation &amp; Glass Material
- <figure aria-labelledby="caption-dwtvCqQShQ"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/dwtvCqQShQ-300.avif 300w, /artikel/3d_modellierung/dwtvCqQShQ-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/dwtvCqQShQ-300.jpeg 300w, /artikel/3d_modellierung/dwtvCqQShQ-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/dwtvCqQShQ-300.jpeg" width="600" height="453" alt="Water" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-dwtvCqQShQ">Water</figcaption> </figure> 
-<a href="water.blend">Water</a></p>
-<h4 id="body" tabindex="-1"><a class="header-anchor" href="#body">Body</a></h4>
-<p>Bones &amp; Skin Modifier
- <figure aria-labelledby="caption-p0ZzQwo6CR"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/p0ZzQwo6CR-300.avif 300w, /artikel/3d_modellierung/p0ZzQwo6CR-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/p0ZzQwo6CR-300.jpeg 300w, /artikel/3d_modellierung/p0ZzQwo6CR-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/p0ZzQwo6CR-300.jpeg" width="600" height="450" alt="Body" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-p0ZzQwo6CR">Body</figcaption> </figure> 
-<a href="body.blend">Body</a></p>
-<h4 id="cloud" tabindex="-1"><a class="header-anchor" href="#cloud">Cloud</a></h4>
-<p>Volumetrics &amp; Voronoi Texture
- <figure aria-labelledby="caption-47EezIB0YT"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/47EezIB0YT-300.avif 300w, /artikel/3d_modellierung/47EezIB0YT-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/47EezIB0YT-300.jpeg 300w, /artikel/3d_modellierung/47EezIB0YT-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/47EezIB0YT-300.jpeg" width="600" height="413" alt="Cloud" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-47EezIB0YT">Cloud</figcaption> </figure> 
-<a href="cloud.blend">Cloud</a></p>
-<h4 id="vfx" tabindex="-1"><a class="header-anchor" href="#vfx">VFX</a></h4>
-<p>Tracker &amp; Solve Camera Motion
- <figure aria-labelledby="caption-tUDtnQJkNa"> <picture> <source type="image/avif" srcset="/artikel/3d_modellierung/tUDtnQJkNa-300.avif 300w, /artikel/3d_modellierung/tUDtnQJkNa-600.avif 600w" sizes="80vw">  <source type="image/jpeg" srcset="/artikel/3d_modellierung/tUDtnQJkNa-300.jpeg 300w, /artikel/3d_modellierung/tUDtnQJkNa-600.jpeg 600w" sizes="80vw">  <img src="/artikel/3d_modellierung/tUDtnQJkNa-300.jpeg" width="600" height="412" alt="VFX" loading="lazy" decoding="async"/>  </picture> <figcaption id="caption-tUDtnQJkNa">VFX</figcaption> </figure> 
-<a href="vfx.blend">VFX</a> &amp; <a href="vfx.mp4">VFX Video</a></p>
+            <h1 id="one-shot-night" tabindex="-1"><a class="header-anchor" href="#one-shot-night">One Shot Night</a></h1>
+<p><strong>Die erste ONE SHOT NIGHT Luzern ist am 04.05.24.</strong></p>
+<p>Die Zentralschweizer Rollenspiel-Community soll noch mehr Gelegenheit bekommen, sich auszutauschen. Darum veranstalten wir eine erste ONE SHOT NIGHT in Luzern. Fünf Tische stehen für dich bereit. Einfach auswählen und anmelden.</p>
+<p><strong>Wann:</strong> Am 4. Mai 2024 von 19.30 bis 22.30 Uhr</p>
+<p><strong>Wo:</strong> Unterkirche St. Johannes, Würzenbach, Luzern <a href="https://maps.app.goo.gl/PQSFif88uhxU5osC8" target="_blank">Hier auf google Maps</a></p>
+<p><strong>Was:</strong> Zur Auswahl stehen fünf Tische mit unterschiedlichen Rollenspiel-Runden, einem vorbereiteten Charakterblatt für dich und Würfeln. Voranmeldung zwingend nötig.</p>
+<p><strong>Anmeldung:</strong> Schreibe eine E-Mail an <a href="mailto:murphy@penandpaper.blog">murphy@penandpaper.blog</a> mit deinem vollen Namen, deiner Handynummer und dem Tisch an dem du spielen möchtest. Die Teilnahme ist kostenlos.</p>
+<nav class="table-of-contents"><ol><li><a href="#tisch-1-chateaux-ferdasz">Tisch 1 - Châteaux Ferdasz</a></li><li><a href="#tisch-2-der-nachtexpress">Tisch 2 - Der Nachtexpress</a></li><li><a href="#tisch-3-die-rattenplage">Tisch 3 - Die Rattenplage</a></li><li><a href="#tisch-4-spuk-im-corbitt-haus">Tisch 4 - Spuk im Corbitt Haus</a></li><li><a href="#tisch-5-yeryls-super-happy-fun-murder-dungeon">Tisch 5 - Yeryl’s Super Happy Fun Murder Dungeon</a></li></ol></nav><p>Der Event ist organisiert von <a href="https://penandpaper.blog" target="_blank">Penandpaper.blog</a> und Gilde der Nacht.</p>
+<h2 id="tisch-1-chateaux-ferdasz" tabindex="-1"><a class="header-anchor" href="#tisch-1-chateaux-ferdasz">Tisch 1 - Châteaux Ferdasz</a></h2>
+<p>Spielsystem: <em>Dungeons &amp; Dragons 5e</em><br>
+Setting: <em>High Fantasy</em><br>
+Spielleitung: <em>Henrik Amalia</em> <br>
+Max. Anzahl Spielende: <em>6</em></p>
+<blockquote>
+<p>In Cicerno staht es Schloss, wo siit paar Jahr s’letschte Chid vude glorriiche Familie Ferdasz gwohnt het. D’Famili het de Stadt mit ihrne jährlech organisierte Chilbis zum Ruhm bracht – vu wiit wäg sy d’Lüüt ahgreist zum de «Cecco Falin» z’bsueche: Es bunts Triibe mit Wunder, Mysterium und Monstrositäte. Siit 3 Jahr wird de Cecco iz ohni d’Ferdasz gführt und obwohls nit de gliich Charme het, gits einigi Lüüt wo probieret de Cecco Falin in allne Ehre z’bhalte. zisch d’Klarabelldt Ferdasz verstorbe und s’Erbi isch uf en komisch zämegwürfelti Truppe vu Artiste ghiit, wo a dem verwehte Septembermorge sich ufe Wääg zum Schloss macht. Welli Schätz sy ächt i dem Châteaux verborge?</p>
+</blockquote>
+<h2 id="tisch-2-der-nachtexpress" tabindex="-1"><a class="header-anchor" href="#tisch-2-der-nachtexpress">Tisch 2 - Der Nachtexpress</a></h2>
+<p>Spielsystem: <em>Cthulhu 7e</em><br>
+Setting: <em>Grusel-Mystery in den 1920ern</em><br>
+Spielleitung: <em>Alejandro</em> <br>
+Max. Anzahl Spielende: <em>4</em></p>
+<blockquote>
+<p>Die Isolation einer nächtlichen Fahrt in den luxuriösen Waggons eines Expresszuges von Frankfurt nach Berlin führt zu bemerkenswerten Begegnungen und unverhofften Herausforderungen.</p>
+</blockquote>
+<h2 id="tisch-3-die-rattenplage" tabindex="-1"><a class="header-anchor" href="#tisch-3-die-rattenplage">Tisch 3 - Die Rattenplage</a></h2>
+<p>Spielsystem: <em>Midgard 5</em><br>
+Setting: <em>Low Fantasy</em><br>
+Spielleitung: <em>Claude</em> <br>
+Max. Anzahl Spielende: <em>4</em></p>
+<blockquote>
+<p>Die Abenteuer sind auf dem Weg in den Süden von Alba. Sie haben sich auf der Strasse kennengelernt und sich zusammengetan. Eine Tagesreise vor dem dunklen Wald von Broceliande übernachten sie in der Herberge «Zum gurgelnden Bach». Doch zum Leidwesen der Abenteuer scheint der Vorratskeller von Ratten heimgesucht zu werden. Eine Möglichkeit ihren Kampfesmut zu beweisen?</p>
+</blockquote>
+<h2 id="tisch-4-spuk-im-corbitt-haus" tabindex="-1"><a class="header-anchor" href="#tisch-4-spuk-im-corbitt-haus">Tisch 4 - Spuk im Corbitt Haus</a></h2>
+<p>Spielsystem: <em>Cthulhu 7e</em><br>
+Setting: <em>Grusel-Mystery in den 1920ern</em><br>
+Spielleitung: <em>Michelle</em> <br>
+Max. Anzahl Spielende: <em>4</em></p>
+<blockquote>
+<p>Ein Hausbesitzer bittet euch ein altes Haus im Zentrum von Boston zu untersuchen. Man nennt es das „Corbitt-Haus“. Seit einer Tragödie war es nicht möglich, das Haus zu vermieten und es ist dringend erforderlich, den guten Ruf des Hauses wiederherzustellen.</p>
+</blockquote>
+<h2 id="tisch-5-yeryls-super-happy-fun-murder-dungeon" tabindex="-1"><a class="header-anchor" href="#tisch-5-yeryls-super-happy-fun-murder-dungeon">Tisch 5 - Yeryl’s Super Happy Fun Murder Dungeon</a></h2>
+<p>Spielsystem: <em>Dungeons &amp; Dragons 5e</em><br>
+Setting: <em>High Fantasy</em><br>
+Spielleitung: <em>Nikita</em> <br>
+Max. Anzahl Spielende: <em>5</em></p>
+<blockquote>
+<p>Vor Jahrhunderten floh ein Betrachter namens Yeryl aus seinem Geburtsort und wanderte auf der Suche nach einem Ort, den er sein Zuhause nennen konnte, durch die Lande. Schliesslich fand er eine seit langem verlassene Ruine inmitten eines öden und unwirtlichen Tals. Yeryl verbrachte Jahre damit, den Ort so umzugestalten, dass er seinen paranoiden Plänen entsprach. Besucher waren selten genug, und die wenigen, die es in Yeryls Versteck schafften, wurden schnell vernichtet oder in seinen Dienst gezwungen.</p>
+</blockquote>
+<h1 id="anmeldung" tabindex="-1"><a class="header-anchor" href="#anmeldung">Anmeldung</a></h1>
+<p>Schreibe eine E-Mail an <a href="mailto:murphy@penandpaper.blog">murphy@penandpaper.blog</a> mit deinem vollen Namen, deiner Handynummer und dem Tisch an dem du spielen möchtest.</p>
+<p>Die Teilnahme ist kostenlos.</p>
 
         </main>
     </div>
