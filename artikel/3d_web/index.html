@@ -67,7 +67,7 @@ async function createSceneAsync(engine) {
 
 	const sphereSun = BABYLON.Mesh.CreateSphere('sphere-sun', 8, 5.0, scene);
 
-	const cube = await BABYLON.SceneLoader.ImportMeshAsync('', './3d_web/', '2021-10-17.glb', scene);
+	const cube = await BABYLON.SceneLoader.ImportMeshAsync('', './', '2021-10-17.glb', scene);
 	shadow.addShadowCaster(cube.meshes[0]);
 	cube.meshes[0].position.y = 0.1;
 	cube.meshes[1].receiveShadows = true;
